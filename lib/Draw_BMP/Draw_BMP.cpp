@@ -29,7 +29,7 @@ void bmpDraw(Adafruit_ILI9341 &tft, String &filename, uint8_t x, uint16_t y) {
 
     if((x >= tft.width()) || (y >= tft.height())) return;
 
-    bmpFile = SD.open(filename);
+    bmpFile = SD.open((const char *)filename.c_str());
 
     Serial.println(bmpFile ? "bmp!" : "no bmp :(");
 
