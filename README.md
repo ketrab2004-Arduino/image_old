@@ -15,5 +15,6 @@
 1. Change your settings in image_old.ino
     * `BRIGHTNESS`: 0-255 for the backlight strength
     * `SD_CS`: if the SD card is connected to a different port
+    * `String toLoad`: the url of the image to try to display
 1. Upload the sketch
 1. See the images
